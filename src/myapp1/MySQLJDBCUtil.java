@@ -20,7 +20,7 @@ public class MySQLJDBCUtil {
      public static Connection getConnection() throws SQLException {
         Connection conn = null;
  
-        try (FileInputStream f = new FileInputStream("C:\\Users\\PC\\Documents\\NetBeansProjects\\MyApp1\\src\\myapp1\\db.properties")) {
+        try (FileInputStream f = new FileInputStream("db.properties.localaddress")) {
  
             // load the properties file
             Properties pros = new Properties();
